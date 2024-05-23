@@ -1,0 +1,78 @@
+.shopMainContainer {
+  width: 100%;
+  //height: 100vh;
+  min-height: calc(100vh - 193px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  // @media (max-width: 968px) {
+  //   min-height: calc(100vh - 93px);
+  // }
+
+  .contentContainer {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+
+    .productDisplayArea {
+      flex: 1; // Takes remaining space
+      overflow: auto; // Adds scrolling if contents exceed the area's height
+      padding: 15px;
+
+      .products {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap; // Allow items to wrap to the next line
+        gap: 25px; // Adds some space between the products
+        overflow: auto; // Adds scrolling if products exceed the container's height
+        align-items: flex-start; // Align items at the start of the container
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.noProductsContainer {
+  flex: 1;
+  height: 100%;
+  //flex-grow: 1;
+  flex-direction: column;
+  //padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  // background-color: red;
+  h4,
+  h5,
+  p {
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: 800;
+    color: var(--color-dark-green);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    @media (max-width: 850px) {
+      font-size: 28px;
+    }
+  }
+  img {
+    width: 80%;
+    height: auto;
+    cursor: pointer;
+    @media (max-width: 1280px) {
+      width: 50%;
+    }
+    @media (max-width: 1000px) {
+      width: 60%;
+    }
+    @media (max-width: 850px) {
+      width: 70%;
+    }
+    @media (max-width: 600px) {
+      width: 90%;
+    }
+  }
+}

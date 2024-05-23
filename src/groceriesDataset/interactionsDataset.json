@@ -1,0 +1,77 @@
+{
+  "userId": "user1",
+  "interactions": [
+    {
+      "productID": 1,
+      "eventType": "browsed",
+      "rating": 0,
+      "timestamp": "2024-04-08T21:15:00Z"
+    },
+    {
+      "productID": 2,
+      "eventType": "added_to_wishlist",
+      "rating": 0,
+      "timestamp": "2024-04-07T18:20:00Z"
+    },
+    {
+      "productID": 3,
+      "eventType": "purchased",
+      "rating": 4,
+      "timestamp": "2024-04-08T10:00:00Z"
+    },
+    {
+      "productID": 182,
+      "eventType": "browsed",
+      "rating": 0,
+      "timestamp": "2024-04-08T21:15:00Z"
+    },
+    {
+      "productID": 125,
+      "eventType": "added_to_wishlist",
+      "rating": 0,
+      "timestamp": "2024-04-07T18:20:00Z"
+    },
+    {
+      "productID": 185,
+      "eventType": "purchased",
+      "rating": 0,
+      "timestamp": "2024-04-08T10:00:00Z"
+    },
+    {
+      "productID": 191,
+      "eventType": "browsed",
+      "rating": 0,
+      "timestamp": "2024-04-08T21:15:00Z"
+    },
+    {
+      "productID": 192,
+      "eventType": "added_to_wishlist",
+      "rating": 0,
+      "timestamp": "2024-04-07T18:20:00Z"
+    },
+    {
+      "productID": 22,
+      "eventType": "purchased",
+      "rating": 5,
+      "timestamp": "2024-04-08T10:00:00Z"
+    },
+    {
+      "productID": 25,
+      "eventType": "browsed",
+      "rating": 0,
+      "timestamp": "2024-04-08T21:15:00Z"
+    },
+    {
+      "productID": 24,
+      "eventType": "added_to_wishlist",
+      "rating": 0,
+      "timestamp": "2024-04-07T18:20:00Z"
+    },
+    {
+      "productID": 23,
+      "eventType": "purchased",
+      "rating": 1,
+      "timestamp": "2024-04-08T10:00:00Z"
+    }
+  ]
+}

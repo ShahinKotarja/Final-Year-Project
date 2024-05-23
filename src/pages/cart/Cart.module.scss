@@ -1,0 +1,310 @@
+.cartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  h3 {
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+
+  .cartContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 25px;
+    padding: 0 2rem;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+
+    .leftPanel {
+      flex: 1.8;
+      position: relative;
+
+      @media (max-width: 1200px) {
+        flex: 1;
+        width: 100%;
+      }
+
+      .cartTable {
+        width: 100%;
+        border-collapse: collapse;
+
+        thead {
+          border-collapse: collapse;
+          tr {
+            th {
+              background-color: white;
+            }
+          }
+        }
+
+        th,
+        td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: left;
+        }
+
+        th {
+          background-color: #f4f4f4;
+        }
+
+        img {
+          width: 50px;
+          height: auto;
+          margin-right: 10px;
+        }
+
+        .quantityHandler {
+          width: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 170px;
+          border: 1px solid var(--color-very-light-gray);
+          padding: 5px;
+          button {
+            cursor: pointer;
+            border: none;
+            background-color: var(--color-green);
+            color: white;
+            border-radius: 100%;
+            width: 25px;
+            height: 25px;
+            transition: all 0.1s ease-in-out;
+
+            &:active {
+              transform: scale(0.9);
+            }
+          }
+          span {
+            margin: 0 5px;
+          }
+        }
+
+        .deleteHandler {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            padding: 0;
+            margin: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            &:active {
+              transform: scale(0.95);
+            }
+          }
+        }
+      }
+
+      .scrollableBody {
+        max-height: 800px;
+        overflow-y: auto;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: black transparent;
+        /* Styling the scrollbar for Webkit browsers */
+        &::-webkit-scrollbar {
+          width: 5px; /* width of the entire scrollbar */
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: transparent; /* color of the track (part the scrollbar can move within) */
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: black; /* color of the scroll thumb */
+          border-radius: 10px; /* roundness of the scroll thumb */
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background-color: #555; /* color of the scroll thumb when hovered over */
+        }
+
+        tbody {
+          tr {
+            td {
+            }
+          }
+        }
+      }
+    }
+
+    .rightPanel {
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 1px solid var(--color-very-light-gray);
+
+      @media (max-width: 1200px) {
+        flex: 1;
+        width: 100%;
+      }
+
+      .deliverTo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+        p {
+          font-weight: 600;
+          margin: 0 0 5px 0;
+          span {
+            font-weight: 400;
+            color: var(--color-medium-gray);
+          }
+        }
+      }
+
+      .paymentMethod {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+        p {
+          font-weight: 600;
+          margin: 0 0 5px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            height: 50px;
+            width: auto;
+            margin: 0 10px;
+          }
+          span {
+            font-weight: 400;
+            color: var(--color-medium-gray);
+          }
+        }
+      }
+    }
+  }
+}
+
+.returnToShop {
+  margin-top: 20px;
+}
+
+.couponContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  gap: 15px;
+  box-sizing: border-box;
+  margin-top: 1.5rem;
+  border: 1px solid var(--color-very-light-gray);
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  p {
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 45px;
+  flex: 1;
+
+  @media (max-width: 550px) {
+    width: 100%;
+    height: 55px;
+  }
+}
+
+.searchInput {
+  padding-left: 35px;
+  border: 1px solid var(--color-medium-gray);
+  border-right: none;
+  border-radius: 50px 0 0 50px;
+  height: 100%;
+  width: 90%;
+  box-sizing: border-box;
+  font-size: 15px;
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--color-medium-gray);
+    border-right: none;
+  }
+}
+
+.searchButton {
+  border: 1px solid #333333;
+  background-color: #333333;
+  cursor: pointer;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: 0 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  right: 0;
+
+  &:active {
+    filter: brightness(80%);
+
+    -webkit-box-shadow: 4px 0px 3px -2px #134914;
+    -moz-box-shadow: 4px 0px 3px -2px #134914;
+    box-shadow: 4px 0px 3px -2px #134914;
+  }
+}
+
+.bottomBorder {
+  width: 100%;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-very-light-gray);
+    p {
+      margin: 0;
+    }
+    h6 {
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+}
+
+.emptyCart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2rem;
+  img {
+    width: 500px;
+    height: auto;
+  }
+  a {
+    text-align: center;
+  }
+}

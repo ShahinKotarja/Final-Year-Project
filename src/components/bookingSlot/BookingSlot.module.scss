@@ -1,0 +1,45 @@
+.bookingContainer {
+  max-width: 100%;
+
+  h3 {
+    margin-bottom: 15px;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
+  .dayColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dayHeader {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color-medium-gray);
+  }
+
+  .slot {
+    padding: 5px;
+    border: none;
+    background-color: var(--color-bg2);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s;
+    margin-bottom: 5px;
+
+    &:hover,
+    &.selected {
+      background-color: #00b207;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+}
+
+.wait {
+  position: fixed;
+  left: 50%;
+  top: 37%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: white;
+}
+
+.loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  width: 180px;
+  height: 180px;
+  background-color: var(--color-tesco-blue);
+  //padding: 1rem;
+  border-radius: 50%;
+  border: 10px solid var(--color-tesco-red);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  img {
+    width: auto;
+    height: 150px;
+    margin-top: 3rem;
+  }
+}

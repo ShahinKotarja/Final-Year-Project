@@ -1,0 +1,223 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  font-family: "Poppins", sans-serif;
+
+  /* // Colors */
+  --primary-color: #007bff;
+  --success-color: #28a745;
+  --danger-color: orangered;
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
+  --gray-color: #6c757d;
+
+  --color-dark-white: #f1f1f1;
+
+  --color-tesco-blue: #00539f;
+  --color-tesco-red: #ee1c2e;
+
+  /* new colors */
+  --color-white: #ffffff;
+  --color-dark-gray: #666666;
+  --color-medium-gray: #808080;
+  --color-medium-gray2: #4d4d4d;
+  --color-light-gray: #999999;
+  --color-very-light-gray: #e6e6e6;
+  --color-green: #00b207;
+  --color-dark-green: #2c742f;
+  --color-danger-red: #ee1c2e;
+  --color-dark: #333333;
+  --color-black: #1a1a1a;
+  --color-bg2: #edf2ee;
+
+  /* // Spacing */
+  --default-padding: 1rem;
+  --default-margin: 1rem;
+
+  /* // Typography */
+  /* --heading-font-size: 2rem;
+  --default-font-size: 1rem;
+  --small-font-size: 0.875rem; */
+
+  --heading-base-size: 1rem;
+
+  /* // Borders */
+  --border-radius: 0.25rem;
+
+  /* // Box Shadows */
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+  /* // Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+/* color classes */
+
+.dark-gray {
+  color: var(--color-dark-gray);
+}
+
+section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  /* font-size: var(--default-font-size); */
+  background-color: var(--color-white);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: calc(1.75rem + 1.5vw);
+}
+h2 {
+  font-size: calc(1.25rem + 1vw);
+}
+
+h3 {
+  font-size: calc(1rem + 0.8vw);
+}
+
+h4 {
+  font-size: calc(1.5rem + 0.2vw);
+}
+
+h5 {
+  font-size: calc(1.25rem + 0.15vw);
+}
+
+h6 {
+  font-size: calc(1rem + 0.15vw);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--default-margin);
+  font-size: calc(0.6rem + 0.5vw);
+  line-height: 1.6;
+}
+
+label {
+  font-size: calc(1.1rem + 0.2vw);
+}
+
+input {
+  outline: none;
+  border: 1px solid var(--color-medium-gray);
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--color-medium-gray);
+}
+
+a {
+  text-decoration: none;
+  font-size: calc(0.75rem + 0.3vw);
+  transition: all 0.1s ease;
+  cursor: pointer;
+  color: #00b207;
+}
+a:hover {
+  filter: brightness(65%);
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+.d-flex {
+  display: flex;
+}
+
+.--d-f-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.mb-2 {
+  margin-bottom: var(--default-margin) * 2;
+}
+.mt-2 {
+  margin-top: var(--default-margin) * 2;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* width and height */
+
+.w-100 {
+  width: 100%;
+}
+
+/* buttons */
+
+.btn-1 {
+  min-width: 172px;
+  height: 47;
+  padding: 14px 32px;
+  width: fit-content;
+  border-radius: 43px;
+  border: none;
+  background-color: var(--color-green);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.btn-1:hover {
+  background-color: #2c742f;
+}
+
+.btn-2 {
+  height: 47;
+  padding: 8px 20px;
+  width: fit-content;
+  border-radius: 43px;
+  border: none;
+  background-color: var(--color-green);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.btn-2:hover {
+  background-color: #2c742f;
+}
